@@ -70,7 +70,7 @@ class EmployeeController extends Controller
     public function show() : View
     {
         return view('employees.create', [
-            'employees' => DB::table('employees')->paginate(15)
+            'employees' => DB::table('employees')->paginate(10)
         ]);
         // return view('employees.show',compact('employee'));
     
